@@ -23,6 +23,7 @@ public class UserResource {
     @GetMapping("/users")
     public ResponseEntity list(){
         List<User> users = userRepository.findAll();
+
         if(users.isEmpty()){
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }
