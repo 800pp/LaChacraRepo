@@ -35,11 +35,10 @@ public class ProyectoRestauranteReservaApplication implements CommandLineRunner 
     public void run(String... args) throws Exception {
 
         User user1 = new User();
-        user1.setName("UserPrueba");
+        user1.setName("Jose");
         user1.setEmail("user1@email.com");
+        user1.setUsername("user1");
         user1.setPassword("123");
-        user1.setRol(1);
-
 
         User userGuardado = userRepository.save(user1);
 

@@ -1,0 +1,72 @@
+
+
+
+/* Principal contenedor: img.. */
+
+
+  
+  #principal-contenedor .principal-index {
+    /* height: auto; */
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* margin: auto; */
+  }
+
+
+   #principal-contenedor .principal-index img {
+    /* background-color: red; */
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    object-fit:cover;
+    /* object-position: center; */
+    /* object-fit: contain; */
+    /* vertical-align: top; */
+    filter: brightness(50%);
+  }
+
+  #principal-contenedor .principal-index .principal-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    z-index: 9000;
+  }
+
+   #principal-contenedor .principal-index .principal-info h2 {
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+
+   #principal-contenedor .principal-index .principal-info p {
+    font-size: 22px;
+    margin-bottom: 44px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center
+  }
+
+   #principal-contenedor .principal-index .principal-info a {
+    font-size: 17px;
+    background-color: #FFF;
+    color: #000;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+  }
+
+   #principal-contenedor .principal-index .principal-info a:hover {
+    background-color: #000;
+    color: #FFF;
+  }
+

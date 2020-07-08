@@ -1,13 +1,9 @@
 package com.lachacra.repository;
 
-
-import com.lachacra.model.User;
+import com.lachacra.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Integer> {
-
-    User findByUsername(String username);
-
+public interface RoleRepository extends JpaRepository<Role, Long> {
 }

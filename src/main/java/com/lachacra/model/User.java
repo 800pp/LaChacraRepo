@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,13 +20,20 @@ public class User {
     private Integer cod;
     private String name;
     private String surnames;
+    private String username;
     private String email;
     private String password;
     private String dni;
     private String cellphone;
-    private int rol;
+   // private int rol;
     private int state;
+
+    @Transient
+    private String passwordConfirm;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Reserve> reserves;
+
+    @ManyToMany
+    private Set<Role> roles;
 }
